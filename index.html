@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <head>
+    <title>Frozen</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="icon" href="olaf1.png">
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Weather</a>
+       <u1>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+       </u1>
+    </header>
+
+    <section> 
+        <img src="Back.png" id="back">
+        <img src="Castle.png" id="castle">  
+        <h2 id="wintertext"> W i n t e r</h2>
+        <a href="#sec2" id="exbt" class="exbt">Explore</a>
+        <img src="SnowDirt.png" id="snow">  
+        <img src="HighGround.png" id="high"> 
+        <img src="Wind.png" id="wind">   
+        <img src="SnowRain.png" id="rain"> 
+        <img src="Sun.png" id="sun"> 
+    </section>
+
+    <div class="second" id="sec2"> 
+      <h2>MadeByElsa</h2>
+      <p>Winter or snow season is the coldest time in polar and temperate or subtropical climates . This season is also one of four seasons in temperate and subtropical countries . Because the earth's axis is tilted about 23.5 degrees, it causes the change of seasons throughout the world. Winter occurs when one hemisphere of the earth moves away from the sun . Every human culture has different views and dates regarding the beginning and end of winter. Some associate it with the weather and air temperature in a region.
+      <br> <br>
+        Astronomically, winter in the southern hemisphere begins on June 21 and ends on September 23 and in the northern hemisphere it begins from December 22 to March 21. Meteorologically, winter in the southern hemisphere begins from June 1 and ends on August 31 and in the northern hemisphere it begins from December 1 and ends on February 28/29. In the solar calendar, winter in the southern hemisphere begins from May 1 and ends on July 31 and in the northern hemisphere it begins from November 1 and ends on January 31.
+      <br><br> The tilt of the Earth's axis relative to its orbital plane plays a large role in the formation of weather. The Earth is tilted at an angle of 23.44° to the plane of its orbit, causing different latitudes to directly face the Sun as the Earth moves through its orbit. This variation brings about seasons. When it is winter in the Northern Hemisphere, the Southern Hemisphere faces the Sun more directly and thus experiences warmer temperatures than the Northern Hemisphere. Conversely, winter in the Southern Hemisphere occurs when the Northern Hemisphere is tilted more toward the Sun. From the perspective of an observer on the Earth, the winter Sun has a lower maximum altitude in the sky than the summer Sun. <br><br>During winter in either hemisphere, the lower altitude of the Sun causes the sunlight to hit the Earth at an oblique angle. Thus a lower amount of solar radiation strikes the Earth per unit of surface area. Furthermore, the light must travel a longer distance through the atmosphere, allowing the atmosphere to dissipate more heat. Compared with these effects, the effect of the changes in the distance of the Earth from the Sun (due to the Earth's elliptical orbit) is negligible. <br><br> The manifestation of the meteorological winter (freezing temperatures) in the northerly snow-prone latitudes is highly variable, depending on elevation, position versus marine winds, and the amount of precipitation. For instance, within Canada (a country of cold winters), Winnipeg, on the Great Plains (a long way from the ocean), has a January high of −11.3 °C (11.7 °F) and a low of −21.4 °C (−6.5 °F). <br><br> In comparison, Vancouver, on the west coast (with a marine influence from moderating Pacific winds), has a January low of 1.4 °C (34.5 °F), with days well above freezing, at 6.9 °C (44.4 °F).[3] Both places are at 49°N latitude and in the same western half of the continent. A similar but less extreme effect is found in Europe: in spite of their northerly latitude, the British Isles lack non-mountain weather stations with a below-freezing mean January temperature.</p>
+    </div>
+
+    <script>
+      let castle = document.getElementById('castle');
+      let high = document.getElementById('high');
+      let text = document.getElementById('exbt');
+      let winter = document.getElementById('winter');
+      let snow = document.getElementById('snow');
+      let wind = document.getElementById('wind');
+      let rain = document.getElementById('rain');
+      let sun = document.getElementById('sun');
+
+      window.addEventListener('scroll', function() {
+        let value = window.scrollY
+        rain.style.left = value * 0.25 + 'px';
+        sun.style.top = value * 0.30 + 'px';
+        castle.style.top = value * 0.10 + 'px';
+        winter.style.marginRight = value * 30 + 'px';
+
+      })
+     </script>
+
+
+
+   </body>
+ 
+</html>
